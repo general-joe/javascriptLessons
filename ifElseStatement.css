@@ -1,0 +1,52 @@
+.grade-checker {
+  background: linear-gradient(135deg, #312e81, #1e1b4b);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 320px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.grade-checker h2 {
+  margin: 0 0 30px;
+}
+
+.score-display {
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.score-display .label {
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  margin-bottom: 10px;
+}
+
+.score-display .score {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c7d2fe;
+}
+
+.score-display .passing {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+.status {
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.status.passed {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.status.failed {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
