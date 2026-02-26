@@ -1,0 +1,71 @@
+.ticket-pricing {
+  background: linear-gradient(135deg, #831843, #4a044e);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 340px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.ticket-pricing h2 {
+  margin: 0 0 25px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  background: rgba(255,255,255,0.1);
+  padding: 15px 25px;
+  border-radius: 12px;
+}
+
+.input-group .label {
+  display: block;
+  font-size: 0.85rem;
+  color: #f9a8d4;
+  margin-bottom: 5px;
+}
+
+.input-group .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price-display {
+  background: rgba(0,0,0,0.3);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  color: #f9a8d4;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.price-type {
+  font-size: 1rem;
+  color: #a5b4fc;
+  margin-top: 10px;
+}
+
+.price-guide {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #f9a8d4;
+}
