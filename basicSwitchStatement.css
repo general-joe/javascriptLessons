@@ -1,0 +1,29 @@
+.day-display {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 320px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.day-display h2 {
+  margin: 0 0 30px;
+  font-size: 1.8rem;
+}
+
+.day-number {
+  font-size: 1.2rem;
+  color: #93c5fd;
+  margin-bottom: 15px;
+}
+
+.day-name {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
