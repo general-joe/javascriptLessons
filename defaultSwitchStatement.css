@@ -1,0 +1,52 @@
+.traffic-light {
+  background: linear-gradient(135deg, #374151, #1f2937);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 280px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.traffic-light h2 {
+  margin: 0 0 25px;
+}
+
+.light-container {
+  background: #111;
+  border-radius: 60px;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.light.red { background: #ef4444; }
+.light.yellow { background: #eab308; }
+.light.green { background: #22c55e; }
+
+.light.active {
+  opacity: 1;
+  box-shadow: 0 0 30px currentColor;
+}
+
+.action {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+}
+
+.action.STOP { background: #ef4444; }
+.action.CAUTION { background: #eab308; color: #000; }
+.action.GO { background: #22c55e; }
