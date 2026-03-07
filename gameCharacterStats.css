@@ -1,0 +1,73 @@
+.character-creator {
+  background: linear-gradient(135deg, #4c1d95, #2e1065);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 340px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.character-creator h2 {
+  margin: 0 0 20px;
+}
+
+.class-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c4b5fd;
+  margin-bottom: 25px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px 15px;
+}
+
+.stat-icon {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.stat-name {
+  display: block;
+  font-size: 0.85rem;
+  color: #a78bfa;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.special-ability {
+  background: linear-gradient(135deg, rgba(139,92,246,0.3), rgba(167,139,250,0.3));
+  border-radius: 12px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.special-label {
+  color: #c4b5fd;
+}
+
+.special-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fbbf24;
+}
