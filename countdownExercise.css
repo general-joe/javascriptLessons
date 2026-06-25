@@ -1,5 +1,5 @@
-.step-counter {
-  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+.countdown-demo {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
   border-radius: 20px;
   padding: 40px;
   text-align: center;
@@ -8,7 +8,7 @@
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-.step-counter h2 {
+.countdown-demo h2 {
   margin: 0 0 25px;
 }
 
@@ -18,33 +18,39 @@
   border-radius: 12px;
   margin-bottom: 25px;
   font-family: monospace;
-  color: #c4b5fd;
+  color: #fca5a5;
 }
 
-.number-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+.countdown-visual {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   margin-bottom: 25px;
-  padding: 20px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 16px;
 }
 
-.num-cell {
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 1.3rem;
+.count-num {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
   font-weight: bold;
+  position: relative;
 }
 
-.num-cell.even {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+.count-num::after {
+  content: '→';
+  position: absolute;
+  right: -25px;
+  color: #fbbf24;
+  font-size: 1.2rem;
 }
 
-.num-cell.odd {
-  background: rgba(255,255,255,0.1);
-  color: #a78bfa;
+.count-num:last-child::after {
+  content: '🎉';
 }
 
 .result-box {
@@ -54,7 +60,7 @@
 }
 
 .result-box .label {
-  color: #c4b5fd;
+  color: #fca5a5;
   margin-right: 10px;
 }
 
