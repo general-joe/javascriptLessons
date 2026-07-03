@@ -1,0 +1,84 @@
+.stack-demo {
+  background: linear-gradient(135deg, #0891b2, #0e7490);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 380px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.stack-demo h2 {
+  margin: 0 0 25px;
+}
+
+.stack-visual {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 25px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 16px;
+  min-height: 80px;
+  align-items: flex-end;
+}
+
+.stack-item {
+  width: 50px;
+  padding: 15px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: stackIn 0.3s ease-out;
+}
+
+@keyframes stackIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.stack-item.pushed {
+  background: #22c55e;
+}
+
+.stack-item.popped {
+  background: #ef4444;
+  opacity: 0.5;
+}
+
+.operations {
+  background: rgba(0,0,0,0.3);
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  color: #67e8f9;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.result-box {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.result-box .label {
+  display: block;
+  font-size: 0.85rem;
+  color: #67e8f9;
+  margin-bottom: 8px;
+}
+
+.result-box .value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fbbf24;
+  font-family: monospace;
+}
