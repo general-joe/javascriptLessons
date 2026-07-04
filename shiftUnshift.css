@@ -1,5 +1,5 @@
-.stack-demo {
-  background: linear-gradient(135deg, #0891b2, #0e7490);
+.queue-demo {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   border-radius: 20px;
   padding: 40px;
   text-align: center;
@@ -8,11 +8,11 @@
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-.stack-demo h2 {
+.queue-demo h2 {
   margin: 0 0 25px;
 }
 
-.stack-visual {
+.queue-visual {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -20,32 +20,23 @@
   padding: 25px;
   background: rgba(0,0,0,0.2);
   border-radius: 16px;
-  min-height: 80px;
-  align-items: flex-end;
 }
 
-.stack-item {
+.queue-item {
   width: 50px;
   padding: 15px;
   background: rgba(255,255,255,0.2);
   border-radius: 8px;
   font-size: 1.5rem;
   font-weight: bold;
-  animation: stackIn 0.3s ease-out;
 }
 
-@keyframes stackIn {
-  from { transform: translateY(-30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.stack-item.pushed {
+.queue-item.front {
   background: #22c55e;
 }
 
-.stack-item.popped {
-  background: #ef4444;
-  opacity: 0.5;
+.queue-item.back {
+  background: #3b82f6;
 }
 
 .operations {
@@ -54,7 +45,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   font-family: monospace;
-  color: #67e8f9;
+  color: #c4b5fd;
 }
 
 .result-grid {
@@ -72,7 +63,7 @@
 .result-box .label {
   display: block;
   font-size: 0.85rem;
-  color: #67e8f9;
+  color: #c4b5fd;
   margin-bottom: 8px;
 }
 
