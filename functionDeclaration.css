@@ -1,0 +1,40 @@
+.function-demo {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  min-width: 350px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.function-demo h2 {
+  margin: 0 0 25px;
+}
+
+.code-display {
+  background: rgba(0,0,0,0.3);
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  font-family: monospace;
+  color: #c4b5fd;
+}
+
+.result-box {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.result-box .label {
+  color: #c4b5fd;
+  margin-right: 10px;
+  font-family: monospace;
+}
+
+.result-box .value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
